@@ -13,7 +13,7 @@ for book in bible:
     book_abbreviation = book.get("abbrev")
 
     for chapter_id, chapter in enumerate(book.get('chapters', []), start=1):
-        for i_verse, verse in enumerate(chapter, start=1)
+        for i_verse, verse in enumerate(chapter, start=1):
             verse_id = f"{book_abbreviation}.{chapter_id}.{verse_id}"
 
             text = verse.strip()
